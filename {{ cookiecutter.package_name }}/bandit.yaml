@@ -1,0 +1,1 @@
+exclude_dirs: ["tests","reports",".vscode",".pytest_cache",".nox",".mypy_cache",".github",".badges"]
