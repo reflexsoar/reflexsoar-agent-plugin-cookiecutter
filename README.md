@@ -32,6 +32,22 @@ This template ships with several development environment options for testing, li
 - They can all be run independently by running `poetry run <module_name> <module_args>`.  Example `poetry run pylint .`
 - You can run the provided `noxfile.py` using `poetry run nox -r` to run them all
 
+### Tools
+
+- flake8
+- pytest
+- pytest-loguru
+- coverage
+- coverage[toml]
+- bandit
+- flynt
+- safety
+- pre-commit
+- nox
+- genbadge
+- isort
+- mypy
+
 ## Pre-Commit Checks
 
 This template ships with `pre-commit` installed so that code quality and testing checks pass before committing any code to the repository.  These can be skipped supplied the `--no-verify` flag on the `git commit` command, although it is not recommended.
@@ -43,7 +59,6 @@ This template ships with `pre-commit` installed so that code quality and testing
 - Any tests in the test directory are checked to make sure they start with `test_`
 - Repository is checked for any leaking private keys
 - Trailing whitespaces are trimmed
-
 
 ## Publishing a Role
 
