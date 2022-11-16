@@ -10,7 +10,12 @@ repository = "https://github.com/{{ cookiecutter.github_username }}/{{ cookiecut
 [tool.poetry.dependencies]
 python = "^3.11"
 
-
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.coverage.run]
+omit = [".*", "*/site-packages/*"]
+
+[tool.bandit]
+exclude_dirs = ["tests","reports",".vscode",".pytest_cache",".nox",".mypy_cache",".github",".badges"]
