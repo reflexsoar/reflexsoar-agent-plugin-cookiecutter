@@ -1,0 +1,1 @@
+from .{{ cookiecutter.role_package_name }} import {{ cookiecutter.role_class_name }}

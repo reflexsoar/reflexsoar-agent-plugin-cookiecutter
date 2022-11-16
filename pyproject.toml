@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "{{ cookiecutter.package_name }}"
+version = "0.1.0"
+description = "{{ cookiecutter.package_description }}"
+authors = ["{{ cookiecutter.author }} <{{ cookiecutter.email }}>"]
+readme = "README.md"
+packages = [{include = "reflex_agent/roles/{{ cookiecutter.role_package_name }}", from="src"}]
+repository = "https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.package_name }}"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
