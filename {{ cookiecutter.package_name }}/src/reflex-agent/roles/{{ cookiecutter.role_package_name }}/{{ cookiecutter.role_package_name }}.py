@@ -8,6 +8,9 @@ class {{ cookiecutter.role_class_name }}(BaseRole):
     subscribe to and download from.
     """
 
+    alias = "{{ role_package_name }}"
+    config_fields = []
+
     def __init__(self, *args, **kwargs):
         """Initializes the {{ cookiecutter.role_name }} role"""
 
