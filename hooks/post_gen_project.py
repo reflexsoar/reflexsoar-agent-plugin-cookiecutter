@@ -17,5 +17,4 @@ dev_packages = [
 ]
 
 subprocess.run(["poetry", "add", "reflexsoar-agent"])
-for package in dev_packages:
-    subprocess.run(["poetry", "add", "--group", "dev", package])
+subprocess.run(["poetry", "add", "--group", "dev", *dev_packages])
