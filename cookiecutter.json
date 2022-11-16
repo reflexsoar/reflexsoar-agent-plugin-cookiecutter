@@ -8,6 +8,11 @@
     "package_description": "ReflexSOAR Agent Role {{ cookiecutter.target_name }}",
     "author": "Brian Carroll",
     "email": "bcarroll@zeroonesecurity.com",
+    "test_badge": true,
+    "coverage_badge": true,
+    "lint_badge": true,
+    "status_badge": true,
+    "status": [ "pre--release-orange", "release-green" ],
     "license": [ "LGPL-3.0-only", "MIT", "Apache-2.0" ],
     "github_username": "reflexsoar"
 }

@@ -1,0 +1,13 @@
+repos:
+- repo: https://github.com/pre-commit/pre-commit-hooks
+  rev: v4.3.0
+  hooks:
+  - id: trailing-whitespace
+  - id: detect-private-key
+  - id: name-tests-test
+    args: ['--pytest-test-first']
+- repo: https://gitlab.com/pycqa/flake8
+  rev: 3.8.1
+  hooks:
+  - id: flake8
+    additional_dependencies: [flake8-bugbear, flake8-bandit]
