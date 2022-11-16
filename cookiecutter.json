@@ -8,6 +8,6 @@
     "package_description": "ReflexSOAR Agent Role {{ cookiecutter.target_name }}",
     "author": "Brian Carroll",
     "email": "bcarroll@zeroonesecurity.com",
-    "license": [],
+    "license": ["foo"],
     "github_account": "reflexsoar"
 }
