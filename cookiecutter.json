@@ -2,7 +2,7 @@
     "target_name": "Test",
     "role_package_name": "{{ cookiecutter.target_name.lower().replace(' ', '_').replace('-', '_') }}",
     "role_name": "{{ cookiecutter.target_name.replace(' ', '_').replace('-', '_') }}",
-    "role_class_name": "{{ cookiecutter.backend_name }}Role",
+    "role_class_name": "{{ cookiecutter.role_name }}Role",
     "package_type": ["role"],
     "package_name": "reflexsoar-agent-role-{{ cookiecutter.role_package_name }}",
     "package_description": "ReflexSOAR Agent Role {{ cookiecutter.target_name }}",
