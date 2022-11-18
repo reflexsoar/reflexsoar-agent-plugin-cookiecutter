@@ -4,7 +4,7 @@
     "plugin_package_name": "{{ cookiecutter.target_name.lower().replace(' ', '_').replace('-', '_') }}",
     "plugin_name": "{{ cookiecutter.target_name.replace(' ', '_').replace('-', '_') }}",
     "plugin_class_name": "{{ cookiecutter.plugin_name }}{{ cookiecutter.package_type }}",
-    "package_name": "reflexsoar-agent-{{ cookiecutter.package_type }}-{{ cookiecutter.plugin_package_name }}",
+    "package_name": "reflexsoar-agent-{{ cookiecutter.package_type.lower() }}-{{ cookiecutter.plugin_package_name }}",
     "package_description": "ReflexSOAR Agent {{ cookiecutter.package_type }} {{ cookiecutter.target_name }}",
     "author": "Brian Carroll",
     "email": "bcarroll@zeroonesecurity.com",
