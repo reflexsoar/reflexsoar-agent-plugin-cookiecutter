@@ -4,7 +4,10 @@ version = "0.1.0"
 description = "{{ cookiecutter.package_description }}"
 authors = ["{{ cookiecutter.author }} <{{ cookiecutter.email }}>"]
 readme = "README.md"
-packages = [{include = "reflex_agent/roles/{{ cookiecutter.role_package_name }}", from="src"}]
+packages = [
+    {include = "reflex_agent/roles/{{ cookiecutter.role_package_name }}", from="src"},
+    {include = "reflex_agent/input/{{ cookiecutter.input_package_name }}", from="src"}
+]
 repository = "https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.package_name }}"
 
 [tool.poetry.dependencies]
@@ -15,7 +18,8 @@ requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
 
 [tool.coverage.run]
-omit = [".*", "*/site-packages/*"]
+omit = [".*", "*/site-packages/*", "*/tests/*"]
+concurrency = ["multiprocessing"]
 
 [tool.bandit]
 exclude_dirs = ["tests","reports",".vscode",".pytest_cache",".nox",".mypy_cache",".github",".badges"]

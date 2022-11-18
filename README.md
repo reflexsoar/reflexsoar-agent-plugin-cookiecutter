@@ -1,6 +1,6 @@
-# ReflexSOAR Agent Role Cookiecutter Template
+# ReflexSOAR Agent Plugin Cookiecutter Template
 
-> :warning: <b>WARNING</b><br>Pluggable Agent Roles is only supported with a yet unreleased ReflexSOAR Agent
+> :warning: <b>WARNING</b><br>Agent plugins are only supported with a yet unreleased ReflexSOAR Agent
 
 ## Usage
 
@@ -14,16 +14,15 @@ python3 -m pip install --user cookiecutter
 Generate the package project using the following command:
 
 ```
-cookiecutter https://github.com/reflexsoar/reflexsoar-agent-role-cookiecutter.git
+cookiecutter https://github.com/reflexsoar/reflexsoar-agent-plugin-cookiecutter.git
 ```
 
-## Developing a Role
+## Developing a Plugin
 
-1. Determine what the Role should do
-2. Define what fields to parse from the `config` parameter as Role specific configurations by setting `config_fields`
-3. Add your primary code to the `main` function
-4. Implement tests to ensure the role code works correctly
-5. Package the role and distribute
+1. Determine what the Plugin should do
+3. Add your primary code to the `main` function of the newly generated files
+4. Implement tests to ensure the plugin code works correctly
+5. Package the plugin and distribute
 
 ## Testing & Code Quality
 
@@ -60,9 +59,9 @@ This template ships with `pre-commit` installed so that code quality and testing
 - Repository is checked for any leaking private keys
 - Trailing whitespaces are trimmed
 
-## Publishing a Role
+## Publishing a Plugin
 
-There are two options for publishing a role:
+There are two options for publishing a Plugin:
 
-- Host the new role within your own github account and publish the backend package to PyPI
-- Ask the ReflexSOAR project team to incorporate the role into the project as a core role
+- Host the new plugin within your own github account and publish the backend package to PyPI
+- Ask the ReflexSOAR project team to incorporate the plugin into the project as a core component
