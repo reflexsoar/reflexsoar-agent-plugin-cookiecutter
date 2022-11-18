@@ -17,7 +17,14 @@ Generate the package project using the following command:
 cookiecutter https://github.com/reflexsoar/reflexsoar-agent-plugin-cookiecutter.git
 ```
 
-***NOTE**: Delete the `roles` or `input` folder if you are not creating a plugin for those components
+**NOTE**: Delete the `roles` or `input` folder if not creating a plugin for those components and remove the associated package definition in pyproject.toml
+
+```toml
+packages = [
+    {include = "reflex_agent/roles/{{ cookiecutter.plugin_package_name }}", from="src"},
+    {include = "reflex_agent/input/{{ cookiecutter.plugin_package_name }}", from="src"}
+]
+```
 
 ## Developing a Plugin
 
