@@ -23,5 +23,5 @@ class {{ cookiecutter.plugin_class_name }}Role(BaseRole):
 
 
 if __name__ == "__main__":
-    {{ cookiecutter.plugin_name }} = {{ cookiecutter.plugin_class_name }}()
+    {{ cookiecutter.plugin_name }} = {{ cookiecutter.plugin_class_name }}Role()
     {{ cookiecutter.plugin_name }}.main()
