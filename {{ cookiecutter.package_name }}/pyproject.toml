@@ -5,8 +5,8 @@ description = "{{ cookiecutter.package_description }}"
 authors = ["{{ cookiecutter.author }} <{{ cookiecutter.email }}>"]
 readme = "README.md"
 packages = [
-    {include = "reflex_agent/roles/{{ cookiecutter.role_package_name }}", from="src"},
-    {include = "reflex_agent/input/{{ cookiecutter.input_package_name }}", from="src"}
+    {include = "reflex_agent/roles/{{ cookiecutter.plugin_package_name }}", from="src"},
+    {include = "reflex_agent/input/{{ cookiecutter.plugin_package_name }}", from="src"}
 ]
 repository = "https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.package_name }}"
 

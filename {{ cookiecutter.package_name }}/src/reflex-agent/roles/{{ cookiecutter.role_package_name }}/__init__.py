@@ -1,1 +1,1 @@
-from .{{ cookiecutter.role_package_name }} import {{ cookiecutter.role_class_name }}
+from .{{ cookiecutter.plugin_package_name }} import {{ cookiecutter.plugin_class_name }}

@@ -19,7 +19,7 @@ cookiecutter https://github.com/reflexsoar/reflexsoar-agent-plugin-cookiecutter.
 
 ## Developing a Plugin
 
-1. Determine what the Plugin should do
+1. Determine what the Plugin should do and pick what type of Plugin it is, a Role or Input
 3. Add your primary code to the `main` function of the newly generated files
 4. Implement tests to ensure the plugin code works correctly
 5. Package the plugin and distribute
