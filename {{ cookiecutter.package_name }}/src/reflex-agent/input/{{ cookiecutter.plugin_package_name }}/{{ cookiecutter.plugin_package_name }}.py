@@ -1,4 +1,6 @@
-from reflexsoar_agent.input.base import BaseInput
+from typing import Dict, Any
+
+from reflexsoar_agent.input.base import BaseInput, InputTypes
 from reflexsoar_agent.core.logging import logger
         
 
@@ -8,10 +10,10 @@ class {{ cookiecutter.plugin_class_name }}Input(BaseInput):
     alias = "{{ cookiecutter.plugin_package_name }}"
     config_fields = []
 
-    def __init__(self, *args, **kwargs):
+    def __init__(self, config: Dict[Any, Any], input_type: str = InputTypes.POLL):
         """Initializes the {{ cookiecutter.plugin_name }} input"""
 
-        super().__init__({}, [], *args, **kwargs)
+        super().__init__(input_type, config)
         
     def main(self):
         """Main method for the {{ cookiecutter.plugin_name }} input"""

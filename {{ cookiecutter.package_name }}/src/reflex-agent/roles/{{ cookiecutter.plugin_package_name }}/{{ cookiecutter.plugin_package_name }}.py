@@ -3,18 +3,14 @@ from reflexsoar_agent.core.logging import logger
         
 
 class {{ cookiecutter.plugin_class_name }}Role(BaseRole):
-    """Defines the SysBeat role.  SysBeat is responsible for providing a 
-    hosted repository of sysmon and beat configs that remove machines can
-    subscribe to and download from.
-    """
+    """Defines the {{ cookiecutter.plugin_class_name }} Role."""
 
     alias = "{{ cookiecutter.plugin_package_name }}"
-    config_fields = []
 
     def __init__(self, *args, **kwargs):
         """Initializes the {{ cookiecutter.plugin_name }} role"""
 
-        super().__init__({}, [], *args, **kwargs)
+        super().__init__(*args, **kwargs)
         
     def main(self):
         """Main method for the {{ cookiecutter.plugin_name }} role"""
