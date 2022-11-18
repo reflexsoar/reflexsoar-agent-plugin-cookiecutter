@@ -2,7 +2,7 @@ from reflexsoar_agent.input.base import BaseInput
 from reflexsoar_agent.core.logging import logger
         
 
-class {{ cookiecutter.plugin_class_name }}(BaseInput):
+class {{ cookiecutter.plugin_class_name }}Input(BaseInput):
     """Defines the {{ cookiecutter.plugin_package_name }} input"""
 
     alias = "{{ cookiecutter.plugin_package_name }}"

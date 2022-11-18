@@ -17,6 +17,8 @@ Generate the package project using the following command:
 cookiecutter https://github.com/reflexsoar/reflexsoar-agent-plugin-cookiecutter.git
 ```
 
+***NOTE**: Delete the `roles` or `input` folder if you are not creating a plugin for those components
+
 ## Developing a Plugin
 
 1. Determine what the Plugin should do and pick what type of Plugin it is, a Role or Input

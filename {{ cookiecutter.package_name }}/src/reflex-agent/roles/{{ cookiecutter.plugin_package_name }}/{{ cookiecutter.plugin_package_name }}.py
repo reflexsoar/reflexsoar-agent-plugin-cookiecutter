@@ -2,7 +2,7 @@ from reflexsoar_agent.role.base import BaseRole
 from reflexsoar_agent.core.logging import logger
         
 
-class {{ cookiecutter.plugin_class_name }}(BaseRole):
+class {{ cookiecutter.plugin_class_name }}Role(BaseRole):
     """Defines the SysBeat role.  SysBeat is responsible for providing a 
     hosted repository of sysmon and beat configs that remove machines can
     subscribe to and download from.
