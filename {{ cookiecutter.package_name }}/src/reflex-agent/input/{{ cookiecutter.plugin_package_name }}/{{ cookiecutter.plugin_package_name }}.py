@@ -9,7 +9,7 @@ class {{ cookiecutter.plugin_class_name }}Input(BaseInput):
     config_fields = []
 
     def __init__(self, *args, **kwargs):
-        """Initializes the {{ cookiecutter.plugin_name }} role"""
+        """Initializes the {{ cookiecutter.plugin_name }} input"""
 
         super().__init__({}, [], *args, **kwargs)
         
